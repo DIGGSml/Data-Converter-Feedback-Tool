@@ -1,0 +1,354 @@
+<Diggs xmlns="http://diggsml.org/schemas/2.0.b"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.0.b http://diggsml.org/schemas/2.0.b/Complete.xsd"
+    xmlns:diggs_geo="http://diggsml.org/schemas/2.0.b/geotechnical"
+    xmlns:witsml="http://www.witsml.org/schemas/131" xmlns:glr="http://www.opengis.net/gml/3.3/lr"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:g3.3="http://www.opengis.net/gml/3.3/ce"
+    xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:diggs="http://diggsml.org/schemas/2.0.b"
+    xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
+    gml:id="NTM1YTEwMzUtYmRmZS00NTIxLTk1OWItZjk4NGEwOWRjZDcx">
+    <documentInformation>
+        <DocumentInformation gml:id="thiscouldbeautgenerated">
+            <creationDate>2016-06-03</creationDate>
+            <author>Keynetix</author>
+            <disclaimer>No specified in AGS data</disclaimer>
+            <auditTrail>
+                <Remark>
+                    <content></content>
+                    <remarkDateTime>2016-06-03</remarkDateTime>
+                </Remark>
+            </auditTrail>
+        </DocumentInformation>
+    </documentInformation>
+<project>
+        <Project gml:id="TestProject">
+            <gml:name>Quinley Test Project</gml:name>
+            <role>
+                <Role>
+                    <rolePerformed>Client</rolePerformed>
+                    <businessAssociate>Key County Unitaries</businessAssociate>
+                </Role>
+            </role>
+            <role>
+                <Role>
+                    <rolePerformed>Contractor</rolePerformed>
+                    <businessAssociate>Soilteam Limited</businessAssociate>
+                </Role>
+            </role>
+            <role>
+                <Role>
+                    <rolePerformed>Engineer</rolePerformed>
+                    <businessAssociate>KSC Consulting Engineers Ltd</businessAssociate>
+                </Role>
+            </role>
+            <location>Quinley Embankment</location>
+        </Project>
+</project>
+   <samplingFeature>
+        <Borehole gml:id="BH129">
+            <gml:name>BH129</gml:name>
+            <role>
+                <Role>
+                    <rolePerformed>Drilling Contractor</rolePerformed>
+                    <businessAssociate>ABC Drilling</businessAssociate>
+                </Role>
+            </role>
+            <role>
+                <Role>
+                    <rolePerformed>Logged by</rolePerformed>
+                    <businessAssociate>Shaoshuai Gong</businessAssociate>
+                </Role>
+            </role>
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#"/>
+            <referencePoint>
+                <PointLocation gml:id="BH129-pl">
+                    <gml:pos srsDimension="3" srsName="urn:diggs:def:crs:DIGGS:0.1:4326_5702">399802.58 301195.20 13.60</gml:pos>
+                    <!-- Coordinate system in WGS 84 and NGVD29 elevation in feet  -->
+                </PointLocation>
+            </referencePoint>
+            <centerLine>
+                <LinearExtent gml:id="BH129-cl">
+                    <gml:posList srsDimension="3" srsName="urn:diggs:def:crs:DIGGS:0.1:4326_5702"
+                        >399802.58 301195.20 13.60 399802.58 301195.20 -8.35</gml:posList>
+                </LinearExtent>
+            </centerLine>
+            <linearReferencing>
+                <LinearSpatialReferenceSystem gml:id="BH129-lsr">
+                    <gml:identifier codeSpace="urn:x-diggs:def:authority:DIGGSINC">urn:diggs:def:fi:DIGGSINC:BH129-lsr</gml:identifier>
+                    <glr:linearElement xlink:href="#bh38-cl"/>
+                    <glr:lrm>
+                        <glr:LinearReferencingMethod gml:id="BH129-lrm">
+                            <glr:name>chainage</glr:name>
+                            <glr:type>absolute</glr:type>
+                            <glr:units>m</glr:units>
+                        </glr:LinearReferencingMethod>
+                    </glr:lrm>
+                </LinearSpatialReferenceSystem>
+            </linearReferencing>
+            <whenConstructed>
+                <TimeInterval gml:id="DGS765F-DA6-2E5C-4987-1FA95">
+                    <start>1991-09-29</start>
+                    <end>1991-09-30</end>
+                </TimeInterval>
+            </whenConstructed>
+            <totalMeasuredDepth uom="">21.95</totalMeasuredDepth>
+        </Borehole>
+    </samplingFeature>
+   <samplingFeature>
+        <Borehole gml:id="BH134">
+            <gml:name>BH134</gml:name>
+            <role>
+                <Role>
+                    <rolePerformed>Drilling Contractor</rolePerformed>
+                    <businessAssociate>ABC Drilling</businessAssociate>
+                </Role>
+            </role>
+            <role>
+                <Role>
+                    <rolePerformed>Logged by</rolePerformed>
+                    <businessAssociate>Shaoshuai Gong</businessAssociate>
+                </Role>
+            </role>
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#"/>
+            <referencePoint>
+                <PointLocation gml:id="BH134-pl">
+                    <gml:pos srsDimension="3" srsName="urn:diggs:def:crs:DIGGS:0.1:4326_5702">399757.08 301268.10 13.89</gml:pos>
+                    <!-- Coordinate system in WGS 84 and NGVD29 elevation in feet  -->
+                </PointLocation>
+            </referencePoint>
+            <centerLine>
+                <LinearExtent gml:id="BH134-cl">
+                    <gml:posList srsDimension="3" srsName="urn:diggs:def:crs:DIGGS:0.1:4326_5702"
+                        >399757.08 301268.10 13.89 399757.08 301268.10 -38.81</gml:posList>
+                </LinearExtent>
+            </centerLine>
+            <linearReferencing>
+                <LinearSpatialReferenceSystem gml:id="BH134-lsr">
+                    <gml:identifier codeSpace="urn:x-diggs:def:authority:DIGGSINC">urn:diggs:def:fi:DIGGSINC:BH134-lsr</gml:identifier>
+                    <glr:linearElement xlink:href="#bh38-cl"/>
+                    <glr:lrm>
+                        <glr:LinearReferencingMethod gml:id="BH134-lrm">
+                            <glr:name>chainage</glr:name>
+                            <glr:type>absolute</glr:type>
+                            <glr:units>m</glr:units>
+                        </glr:LinearReferencingMethod>
+                    </glr:lrm>
+                </LinearSpatialReferenceSystem>
+            </linearReferencing>
+            <whenConstructed>
+                <TimeInterval gml:id="DGS81FA-5C-3CDB-CED2-4A590">
+                    <start>1991-09-29</start>
+                    <end>1991-10-01</end>
+                </TimeInterval>
+            </whenConstructed>
+            <totalMeasuredDepth uom="m">52.70</totalMeasuredDepth>
+        </Borehole>
+    </samplingFeature>
+   <samplingFeature>
+        <Borehole gml:id="BH137">
+            <gml:name>BH137</gml:name>
+            <role>
+                <Role>
+                    <rolePerformed>Drilling Contractor</rolePerformed>
+                    <businessAssociate>ABC Drilling</businessAssociate>
+                </Role>
+            </role>
+            <role>
+                <Role>
+                    <rolePerformed>Logged by</rolePerformed>
+                    <businessAssociate>Shaoshuai Gong</businessAssociate>
+                </Role>
+            </role>
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#"/>
+            <referencePoint>
+                <PointLocation gml:id="BH137-pl">
+                    <gml:pos srsDimension="3" srsName="urn:diggs:def:crs:DIGGS:0.1:4326_5702">399671.18 301433.00 6.40</gml:pos>
+                    <!-- Coordinate system in WGS 84 and NGVD29 elevation in feet  -->
+                </PointLocation>
+            </referencePoint>
+            <centerLine>
+                <LinearExtent gml:id="BH137-cl">
+                    <gml:posList srsDimension="3" srsName="urn:diggs:def:crs:DIGGS:0.1:4326_5702"
+                        >399671.18 301433.00 6.40 399671.18 301433.00 -3.65</gml:posList>
+                </LinearExtent>
+            </centerLine>
+            <linearReferencing>
+                <LinearSpatialReferenceSystem gml:id="BH137-lsr">
+                    <gml:identifier codeSpace="urn:x-diggs:def:authority:DIGGSINC">urn:diggs:def:fi:DIGGSINC:BH137-lsr</gml:identifier>
+                    <glr:linearElement xlink:href="#bh38-cl"/>
+                    <glr:lrm>
+                        <glr:LinearReferencingMethod gml:id="BH137-lrm">
+                            <glr:name>chainage</glr:name>
+                            <glr:type>absolute</glr:type>
+                            <glr:units>m</glr:units>
+                        </glr:LinearReferencingMethod>
+                    </glr:lrm>
+                </LinearSpatialReferenceSystem>
+            </linearReferencing>
+            <whenConstructed>
+                <TimeInterval gml:id="DGS79C-A98-4502-C8B9-272B0">
+                    <start>1991-09-29</start>
+                    <end>1991-09-29</end>
+                </TimeInterval>
+            </whenConstructed>
+            <totalMeasuredDepth uom="">10.05</totalMeasuredDepth>
+        </Borehole>
+    </samplingFeature>
+   <samplingFeature>
+        <Borehole gml:id="BH138">
+            <gml:name>BH138</gml:name>
+            <role>
+                <Role>
+                    <rolePerformed>Drilling Contractor</rolePerformed>
+                    <businessAssociate>ABC Drilling</businessAssociate>
+                </Role>
+            </role>
+            <role>
+                <Role>
+                    <rolePerformed>Logged by</rolePerformed>
+                    <businessAssociate>Shaoshuai Gong</businessAssociate>
+                </Role>
+            </role>
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#"/>
+            <referencePoint>
+                <PointLocation gml:id="BH138-pl">
+                    <gml:pos srsDimension="3" srsName="urn:diggs:def:crs:DIGGS:0.1:4326_5702">399657.18 301492.00 5.69</gml:pos>
+                    <!-- Coordinate system in WGS 84 and NGVD29 elevation in feet  -->
+                </PointLocation>
+            </referencePoint>
+            <centerLine>
+                <LinearExtent gml:id="BH138-cl">
+                    <gml:posList srsDimension="3" srsName="urn:diggs:def:crs:DIGGS:0.1:4326_5702"
+                        >399657.18 301492.00 5.69 399657.18 301492.00 -4.36</gml:posList>
+                </LinearExtent>
+            </centerLine>
+            <linearReferencing>
+                <LinearSpatialReferenceSystem gml:id="BH138-lsr">
+                    <gml:identifier codeSpace="urn:x-diggs:def:authority:DIGGSINC">urn:diggs:def:fi:DIGGSINC:BH138-lsr</gml:identifier>
+                    <glr:linearElement xlink:href="#bh38-cl"/>
+                    <glr:lrm>
+                        <glr:LinearReferencingMethod gml:id="BH138-lrm">
+                            <glr:name>chainage</glr:name>
+                            <glr:type>absolute</glr:type>
+                            <glr:units>m</glr:units>
+                        </glr:LinearReferencingMethod>
+                    </glr:lrm>
+                </LinearSpatialReferenceSystem>
+            </linearReferencing>
+            <whenConstructed>
+                <TimeInterval gml:id="DGSA163-164C-480-F11E-262B8">
+                    <start>1991-09-29</start>
+                    <end>1991-09-29</end>
+                </TimeInterval>
+            </whenConstructed>
+            <totalMeasuredDepth uom="">10.05</totalMeasuredDepth>
+        </Borehole>
+    </samplingFeature>
+   <samplingFeature>
+        <Borehole gml:id="BH140">
+            <gml:name>BH140</gml:name>
+            <role>
+                <Role>
+                    <rolePerformed>Drilling Contractor</rolePerformed>
+                    <businessAssociate>ABC Drilling</businessAssociate>
+                </Role>
+            </role>
+            <role>
+                <Role>
+                    <rolePerformed>Logged by</rolePerformed>
+                    <businessAssociate>Shaoshuai Gong</businessAssociate>
+                </Role>
+            </role>
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#"/>
+            <referencePoint>
+                <PointLocation gml:id="BH140-pl">
+                    <gml:pos srsDimension="3" srsName="urn:diggs:def:crs:DIGGS:0.1:4326_5702">399796.18 301321.10 11.89</gml:pos>
+                    <!-- Coordinate system in WGS 84 and NGVD29 elevation in feet  -->
+                </PointLocation>
+            </referencePoint>
+            <centerLine>
+                <LinearExtent gml:id="BH140-cl">
+                    <gml:posList srsDimension="3" srsName="urn:diggs:def:crs:DIGGS:0.1:4326_5702"
+                        >399796.18 301321.10 11.89 399796.18 301321.10 6.84</gml:posList>
+                </LinearExtent>
+            </centerLine>
+            <linearReferencing>
+                <LinearSpatialReferenceSystem gml:id="BH140-lsr">
+                    <gml:identifier codeSpace="urn:x-diggs:def:authority:DIGGSINC">urn:diggs:def:fi:DIGGSINC:BH140-lsr</gml:identifier>
+                    <glr:linearElement xlink:href="#bh38-cl"/>
+                    <glr:lrm>
+                        <glr:LinearReferencingMethod gml:id="BH140-lrm">
+                            <glr:name>chainage</glr:name>
+                            <glr:type>absolute</glr:type>
+                            <glr:units>m</glr:units>
+                        </glr:LinearReferencingMethod>
+                    </glr:lrm>
+                </LinearSpatialReferenceSystem>
+            </linearReferencing>
+            <whenConstructed>
+                <TimeInterval gml:id="DGS580F-13A1-448-9671-31258">
+                    <start>1991-07-30</start>
+                    <end>1991-07-30</end>
+                </TimeInterval>
+            </whenConstructed>
+            <totalMeasuredDepth uom="">5.05</totalMeasuredDepth>
+        </Borehole>
+    </samplingFeature>
+   <samplingFeature>
+        <Borehole gml:id="BH141">
+            <gml:name>BH141</gml:name>
+            <role>
+                <Role>
+                    <rolePerformed>Drilling Contractor</rolePerformed>
+                    <businessAssociate>ABC Drilling</businessAssociate>
+                </Role>
+            </role>
+            <role>
+                <Role>
+                    <rolePerformed>Logged by</rolePerformed>
+                    <businessAssociate>Shaoshuai Gong</businessAssociate>
+                </Role>
+            </role>
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#"/>
+            <referencePoint>
+                <PointLocation gml:id="BH141-pl">
+                    <gml:pos srsDimension="3" srsName="urn:diggs:def:crs:DIGGS:0.1:4326_5702">399856.18 301245.00 13.10</gml:pos>
+                    <!-- Coordinate system in WGS 84 and NGVD29 elevation in feet  -->
+                </PointLocation>
+            </referencePoint>
+            <centerLine>
+                <LinearExtent gml:id="BH141-cl">
+                    <gml:posList srsDimension="3" srsName="urn:diggs:def:crs:DIGGS:0.1:4326_5702"
+                        >399856.18 301245.00 13.10 399856.18 301245.00 7.6</gml:posList>
+                </LinearExtent>
+            </centerLine>
+            <linearReferencing>
+                <LinearSpatialReferenceSystem gml:id="BH141-lsr">
+                    <gml:identifier codeSpace="urn:x-diggs:def:authority:DIGGSINC">urn:diggs:def:fi:DIGGSINC:BH141-lsr</gml:identifier>
+                    <glr:linearElement xlink:href="#bh38-cl"/>
+                    <glr:lrm>
+                        <glr:LinearReferencingMethod gml:id="BH141-lrm">
+                            <glr:name>chainage</glr:name>
+                            <glr:type>absolute</glr:type>
+                            <glr:units>m</glr:units>
+                        </glr:LinearReferencingMethod>
+                    </glr:lrm>
+                </LinearSpatialReferenceSystem>
+            </linearReferencing>
+            <whenConstructed>
+                <TimeInterval gml:id="DGS3206-FEF-33D3-42FC-1D4A8">
+                    <start>1991-09-29</start>
+                    <end>1991-09-29</end>
+                </TimeInterval>
+            </whenConstructed>
+            <totalMeasuredDepth uom="">5.50</totalMeasuredDepth>
+        </Borehole>
+    </samplingFeature>
+
+</Diggs>
