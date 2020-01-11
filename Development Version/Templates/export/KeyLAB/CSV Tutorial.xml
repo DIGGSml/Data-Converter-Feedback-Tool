@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keylab content="results" timestamp="2017-06-20T07:09:39" xmlns="http://www.keynetix.com/XSD/KeyLAB/Import">
+<!--- this tutorial will select 2 files and then export data from each one into a single keyLAB XML file -->
+
+<KYNCommand command="SelectFile" Extensions="*.CSV" Title="Consolidation Stage 1" FileNumber="1" />
+<KYNCommand command="SelectFile" Extensions="*.CSV" Title="Consolidation Stage 2" FileNumber="2" />
+ 
+<!-- the following example shows how to take the middle part of a line of data by specifing the lefttext and righttext -->
+<!-- the header value allows you to skip instances by defining text to find at the top of the section -->
+ 
+ <KYNCommand command="TXTSINGLEVALUE" FileNumber="1" Header="Company" lefttext="Date," righttext="," type="parameter" name="TestDate"></KYNCommand>
+
+<!-- the following example shows how to take the right hand part of a line of data by leaving the righttext as blank -->
+<!-- it then divides the text by the delimiter and returns a column number of the required data -->
+<!-- The line is "No. of Readings,66,BH369" and the result is "BH369" -->
+ <KYNCommand command="TXTSINGLEVALUE" FileNumber="1" Header="Company" lefttext="No. of Readings" righttext="" type="parameter" name="Hole ID" column="3" Delimiter=","></KYNCommand>
+
+<!-- the isfileselected condition will be skipped if no file name was selected -->
+<KYNCONDITION command="ISFILESELECTED" Filenumber="1">
+<KYNCommand command="TXTArrayValue" column="1" Name="Stage_StageReadings_TimeElapsedMinutes" FileNumber="1" SectionHeader="parameters" TableHeader="Elapsed Time" type="parameter" delimiter=","/>
+<KYNCommand command="TXTArrayValue" column="2" Name="Stage_StageReadings_CompressionGaugeReading" FileNumber="1" SectionHeader="parameters" TableHeader="Elapsed Time" type="parameter" delimiter=","/>	
+</KYNCONDITION>
+
+<KYNCommand command="TXTArrayValueThinned" column1="1" column2="2" Name1="Stage_StageReadings_TimeElapsedMinutes" Name2="Stage_StageReadings_CompressionGaugeReading" FileNumber="1" SectionHeader="parameters" TableHeader="Elapsed Time" type="parameter" delimiter="," ThinnedDistancePercentage="1"/>
+
+
+
+
+<KYNCONDITION command="ISFILESELECTED" Filenumber="2">
+<KYNCommand command="TXTArrayValue" column="1" Name="Stage_StageReadings_TimeElapsedMinutes" FileNumber="2" SectionHeader="parameters" TableHeader="Elapsed Time" type="parameter" delimiter=","/>
+<KYNCommand command="TXTArrayValue" column="2" Name="Stage_StageReadings_CompressionGaugeReading" FileNumber="2" SectionHeader="parameters" TableHeader="Elapsed Time" type="parameter" delimiter=","/>
+</KYNCONDITION>
+									
+
+
+</keylab>
