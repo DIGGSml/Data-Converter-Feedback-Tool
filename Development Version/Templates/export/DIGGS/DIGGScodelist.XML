@@ -1,0 +1,24 @@
+<Dictionary xmlns="http://diggsml.org/schemas/2.5.a"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.5.a-dev/Dictionary_diggs.xsd"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" 
+    xmlns:diggs="http://diggsml.org/schemas/2.5.a" gml:id="measurement_property_class">
+    <gml:identifier codeSpace="http://diggsml.org/terms">
+        DIGGS property classes
+    </gml:identifier>
+	<KYNLoop name="projects" loopby="table" loopon="Definitions">
+    <dictionaryEntry>
+        <Definition gml:id="{{Definitions.Code}}">
+            <gml:description>
+                {{Definitions.Description}}
+            </gml:description>
+            <gml:identifier codeSpace="http://diggsml.org/terms">
+                {{Definitions.name}}
+            </gml:identifier>
+            <dataType>{{Definitions.Data Type}}</dataType>
+            <uomType>{{Definitions.UOMType}}</uomType>
+        </Definition>        
+    </dictionaryEntry>
+	</KYNLoop>
+    
+</Dictionary>
