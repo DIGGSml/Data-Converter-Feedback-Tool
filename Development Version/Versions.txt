@@ -1,0 +1,15 @@
+2.0.14 - 
+Bug Fixed.  Very Hidden Sheets now ignored during conversion of CSV data
+Bug Fixed.  Columns can now be set as autofill in one table and Required in another.
+2.0.14 - 18th May 2020
+XMLTHINNED3DVALUE command added.  Allows you to thin a third value based on the thinning of two others.  VJ Tech Example updated to show it working.
+2.0.16 - 1st July 2020
+Bug Fixed - Sharepoint compatible will all functions
+2.0.17 - 8th July 2020
+Bug Fised - allow Quotes around numbers in a CSV file to be extracted into an array.
+2.0.18 - 20th July 2020
+Bug Fixed - Allow CSV filesnames of less than 3 characters to be exported.
+2.0.20 - 28th July 2020
+New text thinning function TXTARRAYTHINNED3DVALUE
+Updated user guide for all TXT functions
+Export to gINT Excel file (Beta)
