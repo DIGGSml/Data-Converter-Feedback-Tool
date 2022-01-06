@@ -1,0 +1,28 @@
+2.0.14 - 
+Bug Fixed.  Very Hidden Sheets now ignored during conversion of CSV data
+Bug Fixed.  Columns can now be set as autofill in one table and Required in another.
+2.0.14 - 18th May 2020
+XMLTHINNED3DVALUE command added.  Allows you to thin a third value based on the thinning of two others.  VJ Tech Example updated to show it working.
+2.0.16 - 1st July 2020
+Bug Fixed - Sharepoint compatible will all functions
+2.0.17 - 8th July 2020
+Bug Fised - allow Quotes around numbers in a CSV file to be extracted into an array.
+2.0.18 - 20th July 2020
+Bug Fixed - Allow CSV filesnames of less than 3 characters to be exported.
+2.0.20 - 28th July 2020
+New text thinning function TXTARRAYTHINNED3DVALUE
+Updated user guide for all TXT functions
+Export to gINT Excel file (Beta)
+2.0.22 - 19th May 2021
+Updates to TXTArrayValue.
+	1) Added option TableFooter parameter.  Conversion will continue until either a blank line is found or the value in TableFooter is found.
+	2) Added error check that there the number of columns available.  If there are not then the program will display a message and insert a blank line.
+	3) Made modification to remove double delimiters from the row before processing.  This allows mulitple spaces to be delined as a delimiter by definining a single space. 
+2.0.23 - 15th July
+Updates to TXTArrayValue
+	1) blank lines now ignored if TableFooter parameter set.  Previously a blank line would trigger then end of the table.
+2.0.24 - 19th July
+Updates to thinning functions linked to TXTArrayValue
+	1) blank lines now ignored if TableFooter parameter set.  Previously a blank line would trigger then end of the table.
+
+
